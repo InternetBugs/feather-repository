@@ -1,0 +1,40 @@
+{
+  "source": {
+    "name": "酥鱼的 Feather 软件源",
+    "identifier": "io.github.internetbugs.feather-source",
+    "subtitle": "自用 iOS 侧载应用",
+    "description": "酥鱼自用的 Feather 软件源，收录 PiliPlus 和 Baha Plus。安装包直接来自各项目的 GitHub Releases，使用 Feather 签名安装。",
+    "iconURL": "https://github.com/InternetBugs.png?size=512",
+    "website": "https://github.com/InternetBugs/feather-repository",
+    "tintColor": "#249A92"
+  },
+  "versionsToKeep": 3,
+  "apps": [
+    {
+      "name": "PiliPlus",
+      "repo": "bggRGjQaUbCoE/PiliPlus",
+      "developerName": "PiliPlus 开源项目",
+      "subtitle": "哔哩哔哩第三方客户端",
+      "localizedDescription": "使用 Flutter 开发的哔哩哔哩第三方客户端。\n\n项目主页：https://github.com/bggRGjQaUbCoE/PiliPlus",
+      "assetPattern": "^PiliPlus_ios_.*\\.ipa$",
+      "versionStrategy": "pili-asset",
+      "iosProjectPath": "ios/Runner.xcodeproj/project.pbxproj",
+      "iconPath": "ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
+      "tintColor": "#F56B93",
+      "category": "entertainment"
+    },
+    {
+      "name": "Baha Plus",
+      "repo": "InternetBugs/Baha-Plus",
+      "developerName": "InternetBugs",
+      "subtitle": "巴哈姆特动画疯客户端",
+      "localizedDescription": "巴哈姆特动画疯客户端。iOS 安装包由项目发布，使用 Feather 签名安装。\n\n项目主页：https://github.com/InternetBugs/Baha-Plus",
+      "assetPattern": "^BahaPlus-iOS-unsigned\\.ipa$",
+      "versionStrategy": "baha-tag",
+      "iosProjectPath": "app/ios/Runner.xcodeproj/project.pbxproj",
+      "iconPath": "app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png",
+      "tintColor": "#19A7B5",
+      "category": "entertainment"
+    }
+  ]
+}

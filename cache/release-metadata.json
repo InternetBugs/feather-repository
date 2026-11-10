@@ -1,0 +1,44 @@
+{
+  "78fb4d582366967bef97f8ef5d9a7f656f0140cd59a5bb33d8a5c12a1f102a33": {
+    "bundleIdentifier": "com.example.piliplus",
+    "version": "2.2.0",
+    "buildVersion": "5598",
+    "minOSVersion": "14.0",
+    "sha256": "b60cf81f7189787d912cba8f2a7d3dbadebcc415f16a50feee4fc7f8c9cd1471"
+  },
+  "0db7583382bba167c739634f3c4138a3654ff628a5e762717635f0ff6d9f8f70": {
+    "bundleIdentifier": "com.example.piliplus",
+    "version": "2.2.0",
+    "buildVersion": "5590",
+    "minOSVersion": "14.0",
+    "sha256": "becc6671e2557dc2b41176130125729396a9e9363d76ed73fc379ee932f2661e"
+  },
+  "f9f2115d2f43626c72fbac859970cbb309a2ac3c783234e8517292bd5912f1ed": {
+    "bundleIdentifier": "com.example.piliplus",
+    "version": "2.2.0",
+    "buildVersion": "5580",
+    "minOSVersion": "14.0",
+    "sha256": "0347ddd64da484d342827df1b028ae90b1e6fc356a7514b5c4f268e01b363cb9"
+  },
+  "40afc9c7ea25838c953e1d67a16c3413809f4ab02554aab3bbcd1daf09608093": {
+    "bundleIdentifier": "app.bahaplus.mobile",
+    "version": "0.5.1",
+    "buildVersion": "5001",
+    "minOSVersion": "15.0",
+    "sha256": "8feaf6f5f1398cef0c2a07c92be58065d207866a77817e2cd4d3678613d9e6b7"
+  },
+  "ab64907a5cc17b05b9bf557c7ac64e6ff0849505a6066012af76fdd6d21be8bf": {
+    "bundleIdentifier": "app.bahaplus.mobile",
+    "version": "0.5.0",
+    "buildVersion": "5000",
+    "minOSVersion": "15.0",
+    "sha256": "9e2cbed1d09c379e903fc21c83fc96d8126dbdf518852ab9900c1ec7a408a34f"
+  },
+  "076b122c7509f1436222e5905833dfeec354569de8846c3e1f5ee50de412aa82": {
+    "bundleIdentifier": "app.bahaplus.mobile",
+    "version": "0.4.0",
+    "buildVersion": "4000",
+    "minOSVersion": "15.0",
+    "sha256": "c3b8b44a06fe9fd6ce9b086a020dc057a8c7272fd7372382b7841ba433bc112b"
+  }
+}

@@ -1,0 +1,64 @@
+name: 更新 Feather 软件源
+
+on:
+  schedule:
+    - cron: "17,47 * * * *"
+  workflow_dispatch:
+  repository_dispatch:
+    types: [upstream-release]
+  push:
+    branches: [main]
+    paths:
+      - "source.config.json"
+      - "tools/**"
+      - "tests/**"
+      - ".github/workflows/update-source.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-feather-source
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: 检出默认分支
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: main
+          persist-credentials: false
+
+      - name: 配置 Python
+        uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: "3.13"
+
+      - name: 运行离线测试
+        run: python -m unittest discover -s tests -v
+
+      - name: 获取上游版本并生成源
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python tools/build_source.py
+
+      - name: 校验 Feather 源
+        run: python tools/verify_source.py
+
+      - name: 提交更新
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          git add apps.json cache/release-metadata.json
+          if git diff --cached --quiet; then
+            echo "上游无新版本。"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore: 更新 Feather 软件源"
+          git -c credential.helper= -c 'credential.helper=!gh auth git-credential' push origin HEAD:main

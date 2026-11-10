@@ -1,0 +1,132 @@
+{
+  "name": "酥鱼的 Feather 软件源",
+  "identifier": "io.github.internetbugs.feather-source",
+  "subtitle": "自用 iOS 侧载应用",
+  "description": "酥鱼自用的 Feather 软件源，收录 PiliPlus 和 Baha Plus。安装包直接来自各项目的 GitHub Releases，使用 Feather 签名安装。",
+  "iconURL": "https://github.com/InternetBugs.png?size=512",
+  "website": "https://github.com/InternetBugs/feather-repository",
+  "tintColor": "#249A92",
+  "apps": [
+    {
+      "name": "PiliPlus",
+      "developerName": "PiliPlus 开源项目",
+      "subtitle": "哔哩哔哩第三方客户端",
+      "localizedDescription": "使用 Flutter 开发的哔哩哔哩第三方客户端。\n\n项目主页：https://github.com/bggRGjQaUbCoE/PiliPlus",
+      "tintColor": "#F56B93",
+      "category": "entertainment",
+      "bundleIdentifier": "com.example.piliplus",
+      "website": "https://github.com/bggRGjQaUbCoE/PiliPlus",
+      "iconURL": "https://raw.githubusercontent.com/bggRGjQaUbCoE/PiliPlus/2.2.0.2/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024%401x.png",
+      "versions": [
+        {
+          "version": "2.2.0",
+          "buildVersion": "5598",
+          "date": "2026-11-03T07:43:02Z",
+          "localizedDescription": "更新投屏依赖 https://github.com/bggRGjQaUbCoE/PiliPlus/issues/2680#issuecomment-6597938908\r\n修复部分视频评论显示不全 #3458\r\n修复播放课堂视频 #3454 by @ucxn\r\n修复 macOS 关闭系统标题栏后无法拖动 #3453 by @NalCol\r\n修复点赞弹幕跳转未留提前量，导致跳转到弹幕时无法加载 #3459 by @Rim-World\r\nChromeOS(ARC) 上不再主动请求屏幕方向，由系统决定窗口方向 #3406 co-by @selcarpa",
+          "downloadURL": "https://github.com/bggRGjQaUbCoE/PiliPlus/releases/download/2.2.0.2/PiliPlus_ios_2.2.0%2B5598.ipa",
+          "size": 24933082,
+          "minOSVersion": "14.0",
+          "releaseTag": "2.2.0.2",
+          "source": "https://github.com/bggRGjQaUbCoE/PiliPlus/releases/tag/2.2.0.2",
+          "metadataSource": "github-release-and-tag-source",
+          "sha256": "b60cf81f7189787d912cba8f2a7d3dbadebcc415f16a50feee4fc7f8c9cd1471"
+        },
+        {
+          "version": "2.2.0",
+          "buildVersion": "5590",
+          "date": "2026-11-02T12:28:28Z",
+          "localizedDescription": "修复 bug\r\n修复无法播放 drm 番剧 #3449\r\n修复匿名账号搜索被风控 #3411\r\n修复安卓(vivo)音量调节 #3442 by @numb747\r\n修复 Linux MPRIS 未设置 DesktopEntry 与 Identity #3438 by @Infinifar",
+          "downloadURL": "https://github.com/bggRGjQaUbCoE/PiliPlus/releases/download/2.2.0.1/PiliPlus_ios_2.2.0%2B5590.ipa",
+          "size": 24914746,
+          "minOSVersion": "14.0",
+          "releaseTag": "2.2.0.1",
+          "source": "https://github.com/bggRGjQaUbCoE/PiliPlus/releases/tag/2.2.0.1",
+          "metadataSource": "github-release-and-tag-source",
+          "sha256": "becc6671e2557dc2b41176130125729396a9e9363d76ed73fc379ee932f2661e"
+        },
+        {
+          "version": "2.2.0",
+          "buildVersion": "5580",
+          "date": "2026-11-01T07:33:43Z",
+          "localizedDescription": "设置选项调整\r\n支持切换`番剧`/`剧集` PV\r\npgc/pugv api 迁移至 ogv\r\n`我的订阅`详情默认倒序显示\r\n相关推荐过滤屏蔽黑名单 #3276\r\n用户主页支持显示粉丝勋章 #3202\r\n键盘方向键支持长按持续回退 #3379\r\n同步空降助手新片段类型`惊吓` #3368\r\n桌面端进度条支持鼠标悬停预览视频画面\r\n增加桌面端视频底栏时长字体大小 #3372\r\n增加滚轮调节音量开关 #3340 by @Hdy08\r\n侧边栏支持隐藏文字 #3343 by @illumiat\r\n支持`,`/`.`键逐档切换倍速 #3294 by @lzblack\r\n重构 Linux 内嵌 WebView #3423 by @moluopro\r\nLinux 构建依赖调整 #3277 by @Tobiichi-Origuchi\r\nLinux 支持多媒体控制 #3355 by @Tobiichi-Origuchi\r\nLinux 支持检测网络类型 #3164 #3374 by @Tobiichi-Origuchi\r\n`我的`页面支持显示`观看记录`、`稍后再看`、`我的订阅`\r\n支持自定义`buvid` #3253 #3349 co-by @My-Responsitories\r\n缓存面板支持选择音质，修复音质选取问题 #3309 co-by @azkbzxf\r\n支持导出/导入所有数据到压缩包 #3248 by @nlsdt #3313 by @My-Responsitories\r\n其他调整 #3349 by @My-Responsitories\r\n构建脚本不再改写用户的全局 Git 配置 #3360 by @AmCh-Q\r\n\r\n适配更多专栏类型\r\n支持显示 UP 专栏文集 #3316\r\n\r\n首页直播置顶分类标签 #3363\r\n增加全屏 SC 是否显示/不透明度/缩放设置\r\n直播与视频的缓冲区大小区分开 #3308 by @azkbzxf\r\n\r\n支持查看折叠评论 #2391\r\n动态/视频评论 Scheme 改为跳转源页面后定位评论\r\n增加过滤复制视频介绍评论选项 #3312 by @My-Responsitories\r\n增加屏蔽`@`类型评论选项 #2808 #3241 co-by @My-Responsitories\r\n\r\n修复 bug\r\n修复 #3323 #3385\r\n修复专栏跳转评论后内容倒序显示 #3289\r\n修复长用户名被截断 #3359 by @ChenPeeer\r\n修复安卓启动时状态栏颜色 #3332 by @EX3124\r\n修复 Wayland 硬解黑屏 #3261 by @FeiLiuEM\r\n修复 pgc/pugv 分享链接 #3291 by @Starfallan\r\n修复安卓 17 投屏 #2897 #3365 by @TG-Twilight\r\n修复迁移托盘依赖 Linux 菜单显示问题 #3263 by @FeiLiuEM\r\n修复保留 Akamai 原始播放链接及签名参数 #3380 by @aierlma\r\n修复 OriginOS(vivo) 音量条无法二次按下自动收起 #3373 by @SekiBankiYa",
+          "downloadURL": "https://github.com/bggRGjQaUbCoE/PiliPlus/releases/download/2.2.0/PiliPlus_ios_2.2.0%2B5580.ipa",
+          "size": 24921912,
+          "minOSVersion": "14.0",
+          "releaseTag": "2.2.0",
+          "source": "https://github.com/bggRGjQaUbCoE/PiliPlus/releases/tag/2.2.0",
+          "metadataSource": "github-release-and-tag-source",
+          "sha256": "0347ddd64da484d342827df1b028ae90b1e6fc356a7514b5c4f268e01b363cb9"
+        }
+      ],
+      "version": "2.2.0",
+      "versionDate": "2026-11-03T07:43:02Z",
+      "versionDescription": "更新投屏依赖 https://github.com/bggRGjQaUbCoE/PiliPlus/issues/2680#issuecomment-6597938908\r\n修复部分视频评论显示不全 #3458\r\n修复播放课堂视频 #3454 by @ucxn\r\n修复 macOS 关闭系统标题栏后无法拖动 #3453 by @NalCol\r\n修复点赞弹幕跳转未留提前量，导致跳转到弹幕时无法加载 #3459 by @Rim-World\r\nChromeOS(ARC) 上不再主动请求屏幕方向，由系统决定窗口方向 #3406 co-by @selcarpa",
+      "downloadURL": "https://github.com/bggRGjQaUbCoE/PiliPlus/releases/download/2.2.0.2/PiliPlus_ios_2.2.0%2B5598.ipa",
+      "size": 24933082,
+      "minOSVersion": "14.0"
+    },
+    {
+      "name": "Baha Plus",
+      "developerName": "InternetBugs",
+      "subtitle": "巴哈姆特动画疯客户端",
+      "localizedDescription": "巴哈姆特动画疯客户端。iOS 安装包由项目发布，使用 Feather 签名安装。\n\n项目主页：https://github.com/InternetBugs/Baha-Plus",
+      "tintColor": "#19A7B5",
+      "category": "entertainment",
+      "bundleIdentifier": "app.bahaplus.mobile",
+      "website": "https://github.com/InternetBugs/Baha-Plus",
+      "iconURL": "https://raw.githubusercontent.com/InternetBugs/Baha-Plus/v0.5.1/app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024%401x.png",
+      "versions": [
+        {
+          "version": "0.5.1",
+          "buildVersion": "5001",
+          "date": "2026-11-10T08:38:53Z",
+          "localizedDescription": "## 下载说明\n\n- Android：已签名的正式版 APK。\n- iOS：未签名的 IPA，安装前需使用合适的 Apple 证书和描述文件签名。\n- SHA256SUMS.txt 包含两个文件的 SHA-256 校验值。\n\n## 更新内容\n\n### 播放操作与缓冲\n\n- 新增横屏左右滑动快进／快退：拖动时显示目标时间，并同步预览进度条，松手后跳转。\n- 优化手势识别，减少上下滑动误触；取消手势、切换集数或锁定播放器时及时结束预览。\n- 进度条新增灰色缓冲区间，显示实际已加载的片段及其间隙，便于判断播放和跳转位置。\n\n### 播放稳定性\n\n- 新增播放异常自动恢复：遇到长时间卡住、加载超时或可恢复的媒体错误时，尝试重建播放会话，并保留进度、倍速、静音和播放状态。\n- 改进网页播放进程异常退出与原生播放器交接后的恢复处理，限制自动重试频率，减少反复加载。\n- 完善主动暂停、前后台切换、播放结束及官方授权提示下的状态判断，避免误触发恢复。\n\n### 问题反馈与日志\n\n- 账号面板新增“问题反馈与日志”，无需登录即可手动开始、停止、预览、复制和导出分享诊断日志。\n- 采集开关和本机日志可在重启后保留，方便复现问题后反馈；日志自动限量保存，也可手动清除。\n- 日志默认关闭，仅在主动开启后采集；过滤凭据、账号字段和网址，导出分享由用户自行操作。\n\n### 更新与账号\n\n- 启动时自动检查新版本，发现更新后展示版本号与更新说明，并提供下载入口；账号面板也可手动检查。\n- 新增通过官方流程退出登录，改进账号状态同步和菜单交互，移除重复的官方页面入口。",
+          "downloadURL": "https://github.com/InternetBugs/Baha-Plus/releases/download/v0.5.1/BahaPlus-iOS-unsigned.ipa",
+          "size": 28322981,
+          "minOSVersion": "15.0",
+          "releaseTag": "v0.5.1",
+          "source": "https://github.com/InternetBugs/Baha-Plus/releases/tag/v0.5.1",
+          "metadataSource": "github-release-and-tag-source",
+          "sha256": "8feaf6f5f1398cef0c2a07c92be58065d207866a77817e2cd4d3678613d9e6b7"
+        },
+        {
+          "version": "0.5.0",
+          "buildVersion": "5000",
+          "date": "2026-11-09T15:57:32Z",
+          "localizedDescription": "## 下载说明\n\n- Android：已签名的正式版 APK。\n- iOS：未签名的 IPA，安装前需使用合适的 Apple 证书和描述文件签名。\n- SHA256SUMS.txt 包含两个文件的 SHA-256 校验值。\n\n## 更新内容\n\n### 原生播放\n\n- Android 正片改用 ExoPlayer，iOS 正片改用 AVPlayer，视频画面与弹幕由应用统一呈现。年龄确认、广告及账号／地区授权仍通过官方页面完成。\n- 优化网页到原生播放器的交接，接管成功后停止网页视频及重复轮询；初始化失败时显示错误和重试入口。\n- 改进系统媒体控制与音频中断处理，避免网页残留的控制回调干扰原生播放。\n\n### 弹幕与播放恢复\n\n- 调整弹幕时钟和轨道分配，普通暂停时保持弹幕位置，拖动进度后重新排列。\n- 为弹幕增加有上限的文字图像缓存；限制滚动弹幕主动绘制频率，无可见弹幕时停止连续绘制，减少重复渲染。\n- 修复拖动进度后被迟到的位置查询覆盖的问题，并改进切换画质、应用切入后台及返回前台时的暂停状态保持。\n- 官方页面暂时不可用时保留原生播放器和已有缓冲；网页进程退出时提供显式重试，避免自动刷新丢失当前播放会话。\n\n### 界面与使用体验\n\n- 改进追番收藏流程，收藏后保留来源页面与列表位置；需要登录或验证时，完成后可返回原页面。\n- 在开始播放前应用已保存的画质偏好，完善播放恢复与观看记录合并。\n- 调整竖屏播放器的玻璃控件、浮层收起交互及留言卡片层次。\n\n### 开发与发布\n\n- 测试构建支持 iOS Release、Profile 和 Debug 模式，并新增 Windows 本机调试工具。\n- 移除发版流程中的外部机器翻译服务；本次及今后由 Codex 协助发版时，根据实际改动整理中文更新说明。",
+          "downloadURL": "https://github.com/InternetBugs/Baha-Plus/releases/download/v0.5.0/BahaPlus-iOS-unsigned.ipa",
+          "size": 28148887,
+          "minOSVersion": "15.0",
+          "releaseTag": "v0.5.0",
+          "source": "https://github.com/InternetBugs/Baha-Plus/releases/tag/v0.5.0",
+          "metadataSource": "github-release-and-tag-source",
+          "sha256": "9e2cbed1d09c379e903fc21c83fc96d8126dbdf518852ab9900c1ec7a408a34f"
+        },
+        {
+          "version": "0.4.0",
+          "buildVersion": "4000",
+          "date": "2026-11-07T18:37:12Z",
+          "localizedDescription": "## 下载说明\n\n- Android：已签名的正式版 APK。\n- iOS：未签名的 IPA，安装前需使用合适的 Apple 证书和描述文件签名；尚未经过真机验证。\n- SHA256SUMS.txt 包含两个文件的 SHA-256 校验值。\n\n## 更新内容\n\n以下为自 v0.3.1 以来的提交（机器翻译）：\n\n- 允许手动发布版本并翻译注释 (`205d655`)\n- 修复Objective-C中的iOS Swift缓存可见性问题 (`a40d4fb`)\n- 恢复播放会话的Android媒体保留 (`1f6d3dd`)\n- 添加具有自动暂停功能的iOS后台HLS预加载 (`83a4ffe`)\n- 记住跨会话的播放质量 (`00c1e98`)\n- 修复播放退出时iOS媒体会话清理问题 (`7c67139`)\n- 修复挥之不去的玩家菜单屏障 (`8e6e262`)\n- 中央播放器加载指示灯 (`86730b2`)\n- 添加全屏双击播放切换 (`2dbb271`)\n- 添加全屏播放器锁定 (`44320f1`)\n- 删除重复的danmaku设置切换 (`528fb79`)\n- 删除官方详细信息按钮 (`f28e92e`)",
+          "downloadURL": "https://github.com/InternetBugs/Baha-Plus/releases/download/v0.4.0/BahaPlus-iOS-unsigned.ipa",
+          "size": 27930529,
+          "minOSVersion": "15.0",
+          "releaseTag": "v0.4.0",
+          "source": "https://github.com/InternetBugs/Baha-Plus/releases/tag/v0.4.0",
+          "metadataSource": "github-release-and-tag-source",
+          "sha256": "c3b8b44a06fe9fd6ce9b086a020dc057a8c7272fd7372382b7841ba433bc112b"
+        }
+      ],
+      "version": "0.5.1",
+      "versionDate": "2026-11-10T08:38:53Z",
+      "versionDescription": "## 下载说明\n\n- Android：已签名的正式版 APK。\n- iOS：未签名的 IPA，安装前需使用合适的 Apple 证书和描述文件签名。\n- SHA256SUMS.txt 包含两个文件的 SHA-256 校验值。\n\n## 更新内容\n\n### 播放操作与缓冲\n\n- 新增横屏左右滑动快进／快退：拖动时显示目标时间，并同步预览进度条，松手后跳转。\n- 优化手势识别，减少上下滑动误触；取消手势、切换集数或锁定播放器时及时结束预览。\n- 进度条新增灰色缓冲区间，显示实际已加载的片段及其间隙，便于判断播放和跳转位置。\n\n### 播放稳定性\n\n- 新增播放异常自动恢复：遇到长时间卡住、加载超时或可恢复的媒体错误时，尝试重建播放会话，并保留进度、倍速、静音和播放状态。\n- 改进网页播放进程异常退出与原生播放器交接后的恢复处理，限制自动重试频率，减少反复加载。\n- 完善主动暂停、前后台切换、播放结束及官方授权提示下的状态判断，避免误触发恢复。\n\n### 问题反馈与日志\n\n- 账号面板新增“问题反馈与日志”，无需登录即可手动开始、停止、预览、复制和导出分享诊断日志。\n- 采集开关和本机日志可在重启后保留，方便复现问题后反馈；日志自动限量保存，也可手动清除。\n- 日志默认关闭，仅在主动开启后采集；过滤凭据、账号字段和网址，导出分享由用户自行操作。\n\n### 更新与账号\n\n- 启动时自动检查新版本，发现更新后展示版本号与更新说明，并提供下载入口；账号面板也可手动检查。\n- 新增通过官方流程退出登录，改进账号状态同步和菜单交互，移除重复的官方页面入口。",
+      "downloadURL": "https://github.com/InternetBugs/Baha-Plus/releases/download/v0.5.1/BahaPlus-iOS-unsigned.ipa",
+      "size": 28322981,
+      "minOSVersion": "15.0"
+    }
+  ],
+  "featuredApps": [
+    "com.example.piliplus",
+    "app.bahaplus.mobile"
+  ],
+  "news": []
+}
