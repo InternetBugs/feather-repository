@@ -40,5 +40,12 @@
     "buildVersion": "4000",
     "minOSVersion": "15.0",
     "sha256": "c3b8b44a06fe9fd6ce9b086a020dc057a8c7272fd7372382b7841ba433bc112b"
+  },
+  "e3df9c4d204d01f99495a62081790d17b684331294c93201a3b08c5493142d11": {
+    "bundleIdentifier": "app.bahaplus.mobile",
+    "version": "0.5.2",
+    "buildVersion": "5002",
+    "minOSVersion": "15.0",
+    "sha256": "76f9f5cd5b6deee74eac10dade662ba1ebbeafc6bba4d3fb94bff0fffd2cbd29"
   }
 }

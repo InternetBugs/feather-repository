@@ -74,8 +74,21 @@
       "category": "entertainment",
       "bundleIdentifier": "app.bahaplus.mobile",
       "website": "https://github.com/InternetBugs/Baha-Plus",
-      "iconURL": "https://raw.githubusercontent.com/InternetBugs/Baha-Plus/v0.5.1/app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024%401x.png",
+      "iconURL": "https://raw.githubusercontent.com/InternetBugs/Baha-Plus/v0.5.2/app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024%401x.png",
       "versions": [
+        {
+          "version": "0.5.2",
+          "buildVersion": "5002",
+          "date": "2026-11-10T16:47:08Z",
+          "localizedDescription": "## 下载说明\n\n- Android：已签名的正式版 APK，按设备架构选择 `arm64-v8a`、`armeabi-v7a` 或 `x86_64`。\n- iOS：未签名的 IPA，安装前需使用合适的 Apple 证书和描述文件签名。\n- SHA256SUMS.txt 包含三个 Android APK 和 iOS IPA 的 SHA-256 校验值。\n\n## 更新内容\n\n- 修复“问题反馈与日志”页面及日志预览内容被顶部导航栏遮挡的问题。\n- 调整日志采集按钮的位置、宽度和玻璃层显示，改善小屏、大字号及深浅色模式下的可见性与操作体验。\n- Android 安装包按 `arm64-v8a`、`armeabi-v7a`、`x86_64` 三种架构分别提供，可按设备架构选择下载。",
+          "downloadURL": "https://github.com/InternetBugs/Baha-Plus/releases/download/v0.5.2/BahaPlus-iOS-unsigned.ipa",
+          "size": 28323129,
+          "minOSVersion": "15.0",
+          "releaseTag": "v0.5.2",
+          "source": "https://github.com/InternetBugs/Baha-Plus/releases/tag/v0.5.2",
+          "metadataSource": "github-release-and-tag-source",
+          "sha256": "76f9f5cd5b6deee74eac10dade662ba1ebbeafc6bba4d3fb94bff0fffd2cbd29"
+        },
         {
           "version": "0.5.1",
           "buildVersion": "5001",
@@ -101,26 +114,13 @@
           "source": "https://github.com/InternetBugs/Baha-Plus/releases/tag/v0.5.0",
           "metadataSource": "github-release-and-tag-source",
           "sha256": "9e2cbed1d09c379e903fc21c83fc96d8126dbdf518852ab9900c1ec7a408a34f"
-        },
-        {
-          "version": "0.4.0",
-          "buildVersion": "4000",
-          "date": "2026-11-07T18:37:12Z",
-          "localizedDescription": "## 下载说明\n\n- Android：已签名的正式版 APK。\n- iOS：未签名的 IPA，安装前需使用合适的 Apple 证书和描述文件签名；尚未经过真机验证。\n- SHA256SUMS.txt 包含两个文件的 SHA-256 校验值。\n\n## 更新内容\n\n以下为自 v0.3.1 以来的提交（机器翻译）：\n\n- 允许手动发布版本并翻译注释 (`205d655`)\n- 修复Objective-C中的iOS Swift缓存可见性问题 (`a40d4fb`)\n- 恢复播放会话的Android媒体保留 (`1f6d3dd`)\n- 添加具有自动暂停功能的iOS后台HLS预加载 (`83a4ffe`)\n- 记住跨会话的播放质量 (`00c1e98`)\n- 修复播放退出时iOS媒体会话清理问题 (`7c67139`)\n- 修复挥之不去的玩家菜单屏障 (`8e6e262`)\n- 中央播放器加载指示灯 (`86730b2`)\n- 添加全屏双击播放切换 (`2dbb271`)\n- 添加全屏播放器锁定 (`44320f1`)\n- 删除重复的danmaku设置切换 (`528fb79`)\n- 删除官方详细信息按钮 (`f28e92e`)",
-          "downloadURL": "https://github.com/InternetBugs/Baha-Plus/releases/download/v0.4.0/BahaPlus-iOS-unsigned.ipa",
-          "size": 27930529,
-          "minOSVersion": "15.0",
-          "releaseTag": "v0.4.0",
-          "source": "https://github.com/InternetBugs/Baha-Plus/releases/tag/v0.4.0",
-          "metadataSource": "github-release-and-tag-source",
-          "sha256": "c3b8b44a06fe9fd6ce9b086a020dc057a8c7272fd7372382b7841ba433bc112b"
         }
       ],
-      "version": "0.5.1",
-      "versionDate": "2026-11-10T08:38:53Z",
-      "versionDescription": "## 下载说明\n\n- Android：已签名的正式版 APK。\n- iOS：未签名的 IPA，安装前需使用合适的 Apple 证书和描述文件签名。\n- SHA256SUMS.txt 包含两个文件的 SHA-256 校验值。\n\n## 更新内容\n\n### 播放操作与缓冲\n\n- 新增横屏左右滑动快进／快退：拖动时显示目标时间，并同步预览进度条，松手后跳转。\n- 优化手势识别，减少上下滑动误触；取消手势、切换集数或锁定播放器时及时结束预览。\n- 进度条新增灰色缓冲区间，显示实际已加载的片段及其间隙，便于判断播放和跳转位置。\n\n### 播放稳定性\n\n- 新增播放异常自动恢复：遇到长时间卡住、加载超时或可恢复的媒体错误时，尝试重建播放会话，并保留进度、倍速、静音和播放状态。\n- 改进网页播放进程异常退出与原生播放器交接后的恢复处理，限制自动重试频率，减少反复加载。\n- 完善主动暂停、前后台切换、播放结束及官方授权提示下的状态判断，避免误触发恢复。\n\n### 问题反馈与日志\n\n- 账号面板新增“问题反馈与日志”，无需登录即可手动开始、停止、预览、复制和导出分享诊断日志。\n- 采集开关和本机日志可在重启后保留，方便复现问题后反馈；日志自动限量保存，也可手动清除。\n- 日志默认关闭，仅在主动开启后采集；过滤凭据、账号字段和网址，导出分享由用户自行操作。\n\n### 更新与账号\n\n- 启动时自动检查新版本，发现更新后展示版本号与更新说明，并提供下载入口；账号面板也可手动检查。\n- 新增通过官方流程退出登录，改进账号状态同步和菜单交互，移除重复的官方页面入口。",
-      "downloadURL": "https://github.com/InternetBugs/Baha-Plus/releases/download/v0.5.1/BahaPlus-iOS-unsigned.ipa",
-      "size": 28322981,
+      "version": "0.5.2",
+      "versionDate": "2026-11-10T16:47:08Z",
+      "versionDescription": "## 下载说明\n\n- Android：已签名的正式版 APK，按设备架构选择 `arm64-v8a`、`armeabi-v7a` 或 `x86_64`。\n- iOS：未签名的 IPA，安装前需使用合适的 Apple 证书和描述文件签名。\n- SHA256SUMS.txt 包含三个 Android APK 和 iOS IPA 的 SHA-256 校验值。\n\n## 更新内容\n\n- 修复“问题反馈与日志”页面及日志预览内容被顶部导航栏遮挡的问题。\n- 调整日志采集按钮的位置、宽度和玻璃层显示，改善小屏、大字号及深浅色模式下的可见性与操作体验。\n- Android 安装包按 `arm64-v8a`、`armeabi-v7a`、`x86_64` 三种架构分别提供，可按设备架构选择下载。",
+      "downloadURL": "https://github.com/InternetBugs/Baha-Plus/releases/download/v0.5.2/BahaPlus-iOS-unsigned.ipa",
+      "size": 28323129,
       "minOSVersion": "15.0"
     }
   ],
