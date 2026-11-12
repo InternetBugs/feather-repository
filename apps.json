@@ -74,8 +74,21 @@
       "category": "entertainment",
       "bundleIdentifier": "app.bahaplus.mobile",
       "website": "https://github.com/InternetBugs/Baha-Plus",
-      "iconURL": "https://raw.githubusercontent.com/InternetBugs/Baha-Plus/v0.5.2/app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024%401x.png",
+      "iconURL": "https://raw.githubusercontent.com/InternetBugs/Baha-Plus/v0.5.3/app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024%401x.png",
       "versions": [
+        {
+          "version": "0.5.3",
+          "buildVersion": "5003",
+          "date": "2026-11-12T20:33:30Z",
+          "localizedDescription": "## 下载说明\r\n\r\n- Android：已签名的正式版 APK，按设备架构选择 `arm64-v8a`、`armeabi-v7a` 或 `x86_64`。\r\n- iOS：未签名的 IPA，安装前需使用合适的 Apple 证书和描述文件签名。\r\n- SHA256SUMS.txt 包含三个 Android APK 和 iOS IPA 的 SHA-256 校验值。\r\n\r\n## 更新内容\r\n\r\n- 新增长按播放速度控制，松开后恢复原速度。\r\n- 加载资源时显示下载速度。",
+          "downloadURL": "https://github.com/InternetBugs/Baha-Plus/releases/download/v0.5.3/BahaPlus-iOS-unsigned.ipa",
+          "size": 28336145,
+          "minOSVersion": "15.0",
+          "releaseTag": "v0.5.3",
+          "source": "https://github.com/InternetBugs/Baha-Plus/releases/tag/v0.5.3",
+          "metadataSource": "github-release-and-tag-source",
+          "sha256": "a23682768bf4e8ed58b827dc59523ee62a920601a6870e33069f81ca18c47d66"
+        },
         {
           "version": "0.5.2",
           "buildVersion": "5002",
@@ -101,26 +114,13 @@
           "source": "https://github.com/InternetBugs/Baha-Plus/releases/tag/v0.5.1",
           "metadataSource": "github-release-and-tag-source",
           "sha256": "8feaf6f5f1398cef0c2a07c92be58065d207866a77817e2cd4d3678613d9e6b7"
-        },
-        {
-          "version": "0.5.0",
-          "buildVersion": "5000",
-          "date": "2026-11-09T15:57:32Z",
-          "localizedDescription": "## 下载说明\n\n- Android：已签名的正式版 APK。\n- iOS：未签名的 IPA，安装前需使用合适的 Apple 证书和描述文件签名。\n- SHA256SUMS.txt 包含两个文件的 SHA-256 校验值。\n\n## 更新内容\n\n### 原生播放\n\n- Android 正片改用 ExoPlayer，iOS 正片改用 AVPlayer，视频画面与弹幕由应用统一呈现。年龄确认、广告及账号／地区授权仍通过官方页面完成。\n- 优化网页到原生播放器的交接，接管成功后停止网页视频及重复轮询；初始化失败时显示错误和重试入口。\n- 改进系统媒体控制与音频中断处理，避免网页残留的控制回调干扰原生播放。\n\n### 弹幕与播放恢复\n\n- 调整弹幕时钟和轨道分配，普通暂停时保持弹幕位置，拖动进度后重新排列。\n- 为弹幕增加有上限的文字图像缓存；限制滚动弹幕主动绘制频率，无可见弹幕时停止连续绘制，减少重复渲染。\n- 修复拖动进度后被迟到的位置查询覆盖的问题，并改进切换画质、应用切入后台及返回前台时的暂停状态保持。\n- 官方页面暂时不可用时保留原生播放器和已有缓冲；网页进程退出时提供显式重试，避免自动刷新丢失当前播放会话。\n\n### 界面与使用体验\n\n- 改进追番收藏流程，收藏后保留来源页面与列表位置；需要登录或验证时，完成后可返回原页面。\n- 在开始播放前应用已保存的画质偏好，完善播放恢复与观看记录合并。\n- 调整竖屏播放器的玻璃控件、浮层收起交互及留言卡片层次。\n\n### 开发与发布\n\n- 测试构建支持 iOS Release、Profile 和 Debug 模式，并新增 Windows 本机调试工具。\n- 移除发版流程中的外部机器翻译服务；本次及今后由 Codex 协助发版时，根据实际改动整理中文更新说明。",
-          "downloadURL": "https://github.com/InternetBugs/Baha-Plus/releases/download/v0.5.0/BahaPlus-iOS-unsigned.ipa",
-          "size": 28148887,
-          "minOSVersion": "15.0",
-          "releaseTag": "v0.5.0",
-          "source": "https://github.com/InternetBugs/Baha-Plus/releases/tag/v0.5.0",
-          "metadataSource": "github-release-and-tag-source",
-          "sha256": "9e2cbed1d09c379e903fc21c83fc96d8126dbdf518852ab9900c1ec7a408a34f"
         }
       ],
-      "version": "0.5.2",
-      "versionDate": "2026-11-10T16:47:08Z",
-      "versionDescription": "## 下载说明\n\n- Android：已签名的正式版 APK，按设备架构选择 `arm64-v8a`、`armeabi-v7a` 或 `x86_64`。\n- iOS：未签名的 IPA，安装前需使用合适的 Apple 证书和描述文件签名。\n- SHA256SUMS.txt 包含三个 Android APK 和 iOS IPA 的 SHA-256 校验值。\n\n## 更新内容\n\n- 修复“问题反馈与日志”页面及日志预览内容被顶部导航栏遮挡的问题。\n- 调整日志采集按钮的位置、宽度和玻璃层显示，改善小屏、大字号及深浅色模式下的可见性与操作体验。\n- Android 安装包按 `arm64-v8a`、`armeabi-v7a`、`x86_64` 三种架构分别提供，可按设备架构选择下载。",
-      "downloadURL": "https://github.com/InternetBugs/Baha-Plus/releases/download/v0.5.2/BahaPlus-iOS-unsigned.ipa",
-      "size": 28323129,
+      "version": "0.5.3",
+      "versionDate": "2026-11-12T20:33:30Z",
+      "versionDescription": "## 下载说明\r\n\r\n- Android：已签名的正式版 APK，按设备架构选择 `arm64-v8a`、`armeabi-v7a` 或 `x86_64`。\r\n- iOS：未签名的 IPA，安装前需使用合适的 Apple 证书和描述文件签名。\r\n- SHA256SUMS.txt 包含三个 Android APK 和 iOS IPA 的 SHA-256 校验值。\r\n\r\n## 更新内容\r\n\r\n- 新增长按播放速度控制，松开后恢复原速度。\r\n- 加载资源时显示下载速度。",
+      "downloadURL": "https://github.com/InternetBugs/Baha-Plus/releases/download/v0.5.3/BahaPlus-iOS-unsigned.ipa",
+      "size": 28336145,
       "minOSVersion": "15.0"
     }
   ],
