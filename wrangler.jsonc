@@ -1,0 +1,33 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "feather-source",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-11-13",
+  "compatibility_flags": ["nodejs_compat"],
+  "workers_dev": true,
+  "preview_urls": false,
+  "upload_source_maps": true,
+  "durable_objects": {
+    "bindings": [
+      { "name": "FEED", "class_name": "FeedCache" }
+    ]
+  },
+  "migrations": [
+    { "tag": "v1", "new_sqlite_classes": ["FeedCache"] }
+  ],
+  "ratelimits": [
+    {
+      "name": "REQUEST_LIMITER",
+      "namespace_id": "74629101",
+      "simple": { "limit": 30, "period": 60 }
+    }
+  ],
+  "observability": {
+    "enabled": true,
+    "logs": {
+      "enabled": true,
+      "invocation_logs": false,
+      "head_sampling_rate": 1
+    }
+  }
+}

@@ -4,3 +4,12 @@ __pycache__/
 *.ipa
 *.tmp
 .DS_Store
+node_modules/
+dist/
+.wrangler/
+.dev.vars
+.dev.vars.*
+.env
+.env.*
+worker-configuration.d.ts
+subscription.local.txt

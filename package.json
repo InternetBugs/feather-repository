@@ -1,0 +1,29 @@
+{
+  "name": "feather-repository",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "types": "wrangler types --strict-vars false",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "check": "npm run typecheck && npm test",
+    "deploy": "wrangler deploy",
+    "deploy:check": "wrangler deploy --dry-run --outdir dist"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "devDependencies": {
+    "@cloudflare/vitest-plugin": "^1.8.1",
+    "@types/node": "^26.6.6",
+    "typescript": "^7.0.2",
+    "vitest": "^5.1.0",
+    "wrangler": "^4.161.0"
+  },
+  "allowScripts": {
+    "esbuild@0.28.2": true,
+    "workerd@1.20261110.1": true
+  }
+}
